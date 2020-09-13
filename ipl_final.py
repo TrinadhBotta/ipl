@@ -43,7 +43,7 @@ teams   =  matches_data.team1.unique()
 l=matches_data.season.unique()
 l=list(l)
 l.append('Overall')
-
+l.sort()
 
 st.sidebar.title("India Premier League")
 st.sidebar.subheader("Choose Stats")
