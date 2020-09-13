@@ -71,6 +71,7 @@ if classifier =="Team Stats":
         st.write('Matches Played :', len(data))
         st.write('Won :',x[team])
         nr=0
+        Won=x[team]
         if 'No Result' in x:
             nr=x['No Result']
             lost= len(data)-x[team]-nr
@@ -79,7 +80,7 @@ if classifier =="Team Stats":
         else:
             lost= len(data)-x[team]-nr
             st.write('Lost :',lost)
-
+        st.write('Win Ratio :',round(Won/(Won+lost),3))
 
 
 #Head to Head
