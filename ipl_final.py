@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 page_bg_img = '''
 <style>
 body {
-background-image: url("https://images.unsplash.com/photo-1504116468057-3951eae10a58?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAASFBMVEX//zP9/zD//TfJzlz7/zLLzVz6/zD9/yj9/jX//Sz/+kD//TP9/T3/+zv/+Tr5+Tz4/BfHy1/N1kXX3U3O0mTj3mDa01T1+kyeU3aDAAAAoElEQVR4nO3QCQ6CMABE0YIsBVlEUe9/UzHxAk2qjcl7J5j5IQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPxcPpTeUpoEGb99p8F9Z42dwlUvTdF0VYl36WII+xr45ZGswDFU3nsNU+liCeV6WOqdpWqfLOg6ljyXYrre9PZxy2dr7Y3/2pX8leAGeNgSTqxBslQAAAABJRU5ErkJggg==");
 background-size: cover;
 }
 </style>
