@@ -59,7 +59,7 @@ st.sidebar.title("India Premier League")
 st.sidebar.subheader("Choose Stats")
 
 classifier = st.sidebar.selectbox("Stat Type", ("Team Stats", "Head to Head", "Top Run Scorers","Top Man of the Match Players","Top Wicket Takers"))
-@st.cache(persist=True)
+
 if classifier =="Team Stats":
     #if st.checkbox("Ball by Ball  Data", False):
         #st.subheader('Ball by Ball Data')
@@ -92,7 +92,7 @@ if classifier =="Team Stats":
             st.write('Lost :',lost)
         st.write('Win Ratio :',round(Won/(Won+lost),3))
 
-@st.cache(persist=True)
+
 #Head to Head
 if classifier =="Head to Head":
     st.header("Head to Head")
@@ -122,7 +122,8 @@ if classifier =="Head to Head":
             st.write(y[select2],'   :   ',y[select1])
             if 'No Result' in y:
                 st.write('No result :','  ',y['No Result'])
-@st.cache(persist=True)
+
+                
 if classifier =="Top Run Scorers":
     #Leading Run_Scorers
     st.header("Top Run Scorers")
@@ -132,7 +133,7 @@ if classifier =="Top Run Scorers":
     st.write(ans)
 
 
-@st.cache(persist=True)
+
 if classifier =="Top Man of the Match Players":
     #Man of the matches
     st.header('Top 10 Man Of the Match Players')
