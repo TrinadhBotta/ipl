@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 page_bg_img = '''
 <style>
 body {
-background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAASFBMVEX//zP9/zD//TfJzlz7/zLLzVz6/zD9/yj9/jX//Sz/+kD//TP9/T3/+zv/+Tr5+Tz4/BfHy1/N1kXX3U3O0mTj3mDa01T1+kyeU3aDAAAAoElEQVR4nO3QCQ6CMABE0YIsBVlEUe9/UzHxAk2qjcl7J5j5IQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPxcPpTeUpoEGb99p8F9Z42dwlUvTdF0VYl36WII+xr45ZGswDFU3nsNU+liCeV6WOqdpWqfLOg6ljyXYrre9PZxy2dr7Y3/2pX8leAGeNgSTqxBslQAAAABJRU5ErkJggg==");
+background-image: url("https://images.unsplash.com/flagged/photo-1593005510329-8a4035a7238f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
 background-size: cover;
 }
 </style>
@@ -59,7 +59,7 @@ st.sidebar.title("India Premier League")
 st.sidebar.subheader("Choose Stats")
 
 classifier = st.sidebar.selectbox("Stat Type", ("Team Stats", "Head to Head", "Top Run Scorers","Top Man of the Match Players","Top Wicket Takers"))
-
+@st.cache(persist=True)
 if classifier =="Team Stats":
     #if st.checkbox("Ball by Ball  Data", False):
         #st.subheader('Ball by Ball Data')
@@ -92,7 +92,7 @@ if classifier =="Team Stats":
             st.write('Lost :',lost)
         st.write('Win Ratio :',round(Won/(Won+lost),3))
 
-
+@st.cache(persist=True)
 #Head to Head
 if classifier =="Head to Head":
     st.header("Head to Head")
@@ -122,7 +122,7 @@ if classifier =="Head to Head":
             st.write(y[select2],'   :   ',y[select1])
             if 'No Result' in y:
                 st.write('No result :','  ',y['No Result'])
-
+@st.cache(persist=True)
 if classifier =="Top Run Scorers":
     #Leading Run_Scorers
     st.header("Top Run Scorers")
@@ -132,7 +132,7 @@ if classifier =="Top Run Scorers":
     st.write(ans)
 
 
-
+@st.cache(persist=True)
 if classifier =="Top Man of the Match Players":
     #Man of the matches
     st.header('Top 10 Man Of the Match Players')
