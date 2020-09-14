@@ -6,6 +6,8 @@ import plotly.express as px
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+
+page_bg_img = '''
 <style>
 body {
 background-image: url("https://images.unsplash.com/photo-1504116468057-3951eae10a58?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
