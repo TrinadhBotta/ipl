@@ -6,6 +6,14 @@ import plotly.express as px
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+<style>
+body {
+background-image: url("https://images.unsplash.com/photo-1504116468057-3951eae10a58?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+background-size: cover;
+}
+</style>
+'''
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 DATA_URL1 = (
     "deliveries.csv"
